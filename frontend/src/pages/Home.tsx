@@ -4,7 +4,7 @@ import { WIDTH } from "../game/constants";
 import { pad } from "../game/padding";
 // import { useNavigate } from "react-router-dom";
 import { Simulate } from "../components/Simulate";
-import { Quotes, FoundIssue } from "../components";
+import { Quotes } from "../components";
 
 export function Home() {
   // const navigate = useNavigate();
@@ -66,8 +66,7 @@ export function Home() {
       <div className="flex flex-col lg:flex-row  items-center justify-between ">
         <Simulate />
         <Quotes />
-      </div>
-      <FoundIssue />
+      </div>      
     </div>
   );
 }
