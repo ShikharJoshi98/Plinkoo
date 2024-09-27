@@ -19,7 +19,7 @@ export function Game() {
         <div>
             <canvas ref={canvasRef} width="800" height="800"></canvas>
             <button onClick={async() => {
-                const response = await axios.post("http://localhost:3000/game", {data: 1});
+                const response = await axios.post("https://plinkooapi.onrender.com/game", {data: 1});
                 if (ballManager) {
                     ballManager.addBall(response.data.point);
                 }
