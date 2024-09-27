@@ -2,15 +2,15 @@ import { useEffect, useRef, useState } from "react";
 import { BallManager } from "../game/classes/BallManager";
 import { WIDTH } from "../game/constants";
 import { pad } from "../game/padding";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { Simulate } from "../components/Simulate";
 import { Quotes, FoundIssue } from "../components";
 
 export function Home() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const canvasRef = useRef<any>();
-  let [outputs, setOutputs] = useState<{ [key: number]: number[] }>({
+  let [_, setOutputs] = useState<{ [key: number]: number[] }>({
     0: [],
     1: [],
     2: [],
